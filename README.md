@@ -34,7 +34,7 @@ Source: https://owasp.org/Top10/2025/
 ## Setup
 
 ```bash
-git clone <your-fork-url>
+git clone https://github.com/arzxox/vulnshop-owasp-top10-2025
 cd vulnerable-webapp
 python3 -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
