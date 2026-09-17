@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Fetch Avatar{% endblock %}
+{% block content %}
+<h2>Fetch avatar from URL</h2>
+<form method="post">
+  <input name="url" placeholder="https://example.com/avatar.png" size="40">
+  <button type="submit">Fetch</button>
+</form>
+{% if result %}<pre>{{ result }}</pre>{% endif %}
+{% endblock %}

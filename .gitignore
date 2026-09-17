@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+vulnshop.db
+uploads/*
+!uploads/.gitkeep
+.env

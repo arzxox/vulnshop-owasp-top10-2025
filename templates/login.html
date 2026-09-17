@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<h2>Login</h2>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+<form method="post">
+  <label>Username <input name="username"></label><br>
+  <label>Password <input name="password" type="password"></label><br>
+  <button type="submit">Login</button>
+</form>
+<p><small>Seed users: admin/admin123, alice/alicepw, bob/bobpw</small></p>
+{% endblock %}

@@ -1,0 +1,9 @@
+# [A03:2025-Software Supply Chain Failures]
+# Versions pinned OLD ON PURPOSE for Software Composition Analysis (SCA)
+# practice with tools like `pip-audit` / `safety`. Do not "helpfully"
+# upgrade these in this repo -- that defeats the point of the lab.
+Flask==2.0.1
+Werkzeug==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+itsdangerous==2.0.1

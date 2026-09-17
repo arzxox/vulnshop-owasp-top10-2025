@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block content %}
+<h2>Admin panel</h2>
+<table border="1" cellpadding="6">
+<tr><th>ID</th><th>Username</th><th>Is admin</th></tr>
+{% for u in users %}
+<tr><td>{{ u['id'] }}</td><td>{{ u['username'] }}</td><td>{{ u['is_admin'] }}</td></tr>
+{% endfor %}
+</table>
+<p><small>This page never checks who's allowed to view it.</small></p>
+{% endblock %}

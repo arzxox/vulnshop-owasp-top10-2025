@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Theme{% endblock %}
+{% block content %}
+<h2>Theme preference</h2>
+<p>Current theme: {{ prefs.get('theme') }}</p>
+<form method="post">
+  <select name="theme">
+    <option value="light">light</option>
+    <option value="dark">dark</option>
+  </select>
+  <button type="submit">Save</button>
+</form>
+{% endblock %}

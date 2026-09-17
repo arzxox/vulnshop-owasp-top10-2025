@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Notes{% endblock %}
+{% block content %}
+<h2>Shared notes board</h2>
+<form method="post">
+  <textarea name="content" rows="3" cols="40"></textarea><br>
+  <button type="submit">Post note</button>
+</form>
+<ul>
+{% for n in notes %}
+  <li>{{ n['content']|safe }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Reset password{% endblock %}
+{% block content %}
+<h2>Reset password</h2>
+<form method="post">
+  <label>Token <input name="token"></label><br>
+  <label>New password <input name="password" type="password"></label><br>
+  <button type="submit">Reset</button>
+</form>
+{% if msg %}<p>{{ msg }}</p>{% endif %}
+{% endblock %}

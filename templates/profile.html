@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<h2>Profile #{{ profile['id'] }}</h2>
+<p>Username: {{ profile['username'] }}</p>
+<p>Is admin: {{ profile['is_admin'] }}</p>
+<p>Reset token: {{ profile['reset_token'] }}</p>
+<p><small>Try changing the ?id= parameter in the URL.</small></p>
+{% endblock %}

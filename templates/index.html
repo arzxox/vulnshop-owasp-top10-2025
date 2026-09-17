@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<p>Logged in as: <strong>{{ user or "guest" }}</strong></p>
+<p>Welcome to VulnShop, a deliberately vulnerable app for learning the OWASP Top 10:2025.</p>
+<p>See the README in this repo for a full walkthrough of each vulnerability and which tools to use against it.</p>
+{% endblock %}
